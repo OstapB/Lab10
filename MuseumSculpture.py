@@ -11,6 +11,7 @@ class MuseumSculpture:
         self.material = material
         self.height = height
         self.price = price
+        MuseumSculpture.amount_of_sculpture += 1
 
     def __del__(self):
         print("Destructor " + self.name + " deleted")
